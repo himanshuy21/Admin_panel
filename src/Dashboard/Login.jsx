@@ -1,57 +1,64 @@
 import React from "react";
-import porfile from "./Overview_images/Profile.jpg";
-const Show = () => {
-  console.log("Show");
-};
-function Login() {
+import { useState } from "react";
+function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
+  const emailChange = (e) => {
+    setEmail(e.target.value);
+  };
+  const passChange = (e) => {
+    setPass(e.target.value);
+  };
+  const OnClickHandler = (e) => {
+    console.log(email);
+    console.log(pass);
+    e.preventDefault();
+    setEmail("");
+    setPass("");
+  };
   return (
     <>
-      <div className="logincontainer">
-        <img
-          src={porfile}
-          alt="not working sorry "
-          className="profile"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        />
-      </div>
-      <div
-        className="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">
-                Modal title
-              </h5>
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div className="modal-body">...</div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" className="btn btn-primary">
-                Save changes
-              </button>
-            </div>
-          </div>
-        </div>
+      <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4 ">
+        <form className="form-signin ">
+          <h1 className="h3 mb-3 font-weight-normal"> Sign in</h1>
+          <label htmlFor="inputEmail" className="sr-only">
+            Email address
+          </label>
+          <input
+            value={email}
+            type="email"
+            id="inputEmail"
+            className="form-control"
+            placeholder="Email address"
+            required=""
+            autofocus=""
+            onChange={emailChange}
+          />
+          <label htmlFor="inputPassword" className="sr-only">
+            Password
+          </label>
+          <input
+            value={pass}
+            type="password"
+            id="inputPassword"
+            className="form-control"
+            placeholder="Password"
+            required=""
+            onChange={passChange}
+          />
+          <button
+            className="btn btn-lg btn-primary btn-block mt-4"
+            type="submit"
+            onClick={OnClickHandler}
+          >
+            Sign in
+            {/* <Link to={App}>Sign in</Link> */}
+          </button>
+          <p className="mt-5 mb-3 text-muted">© 2023</p>
+        </form>
       </div>
     </>
   );
 }
-export default Login;
+
+export default LoginPage;

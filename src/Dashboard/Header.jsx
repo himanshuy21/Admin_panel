@@ -1,5 +1,6 @@
 import React from "react";
 import porfile from "./Overview_images/Profile.jpg";
+import { Link } from "react-router-dom";
 import logo from "./Overview_images/logo-light2.JPG";
 function HeadersPage() {
   return (
@@ -20,13 +21,20 @@ function HeadersPage() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="navbar-nav">
-          <img
-            src={porfile}
-            alt="not working sorry "
-            className="profile"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          />
+          <div className="d-flex justify-content-center mt-2">
+            <p className="text-light mt-2 p-2">
+              <Link to="/userdetail" className="text-light">
+                Himanshu Yadav
+              </Link>
+            </p>
+            <img
+              src={porfile}
+              alt="not working sorry "
+              className="profile"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            />
+          </div>
         </div>
       </header>
       <div
