@@ -1,9 +1,13 @@
 import React from "react";
 import "../Dashboard/Overview.css";
 import graph from "./Overview_images/Frame.png";
+import Dashboard from "./Dashboard";
+import HeadersPage from "./Header";
 function Overview() {
   return (
     <>
+      <HeadersPage />
+      <Dashboard />
       <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div className="chartjs-size-monitor">
           <div className="chartjs-size-monitor-expand">

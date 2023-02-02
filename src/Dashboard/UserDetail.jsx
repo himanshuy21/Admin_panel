@@ -1,8 +1,13 @@
 import React from "react";
 import porfile from "./Overview_images/Profile.jpg";
+import Dashboard from "./Dashboard";
+import HeadersPage from "./Header";
+import { Link } from "react-router-dom";
 function UserDetail() {
   return (
     <>
+      <HeadersPage />
+      <Dashboard />
       <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
         <div className="card mb-3">
           <div className="row g-0">
@@ -21,7 +26,9 @@ function UserDetail() {
                 </p>
                 <p className="card-text d-flex">
                   <h6>Mail-id :</h6>
-                  <small className="text-muted">himanshu@aimerse.in</small>
+                  <small className="text-muted">
+                    himanshuyadav2102@gmail.com
+                  </small>
                 </p>
                 <p className="card-text d-flex">
                   <h6>Contact Number: </h6>
@@ -37,6 +44,13 @@ function UserDetail() {
                     reprehenderit?
                   </small>
                 </p>
+                <div className="card-text d-flex">
+                  <button className="btn btn-primary">
+                    <Link to="/" className="text-light">
+                      Log Out
+                    </Link>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

@@ -7,18 +7,20 @@ import DataTable from "./Dashboard/DataTable";
 import Services from "./Dashboard/Services";
 import UserDetail from "./Dashboard/UserDetail";
 import LoginPage from "./Dashboard/Login";
+import TogglePage from "./Dashboard/Toggle";
 function App() {
   return (
     <div className="container-fluid">
       <div className="row">
-        <HeadersPage />
-        <Dashboard />
+        {/* <HeadersPage />
+        <Dashboard /> */}
         <Routes>
           <Route exact path="/overview" element={<Overview />}></Route>
           <Route exact path="/datatable" element={<DataTable />}></Route>
           <Route exact path="/services" element={<Services />}></Route>
           <Route exact path="/userdetail" element={<UserDetail />}></Route>
           <Route exact path="/" element={<LoginPage />}></Route>
+          <Route exact path="/home" element={<TogglePage />}></Route>
         </Routes>
       </div>
     </div>

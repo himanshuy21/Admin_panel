@@ -1,10 +1,14 @@
 import React from "react";
+import Dashboard from "./Dashboard";
+import HeadersPage from "./Header";
 const Changes = (e) => {
   console.log(e.target.value);
 };
 function DataTable() {
   return (
     <>
+      <HeadersPage />
+      <Dashboard />
       <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <h2>Admin's Data</h2>
         {/* <!-- Button trigger modal --> */}

@@ -1,8 +1,12 @@
 import React from "react";
 import banner1 from "../servicesPhoto/banner-1.JPG";
+import Dashboard from "./Dashboard";
+import HeadersPage from "./Header";
 function Services() {
   return (
     <>
+      <HeadersPage />
+      <Dashboard />
       <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div className=" mt-4 mb-4">
           <h3>Services</h3>

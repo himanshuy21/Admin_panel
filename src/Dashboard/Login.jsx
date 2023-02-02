@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 function LoginPage() {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
@@ -51,8 +52,9 @@ function LoginPage() {
             type="submit"
             onClick={OnClickHandler}
           >
-            Sign in
-            {/* <Link to={App}>Sign in</Link> */}
+            <Link to="/userdetail" className="text-light">
+              Sign in
+            </Link>
           </button>
           <p className="mt-5 mb-3 text-muted">© 2023</p>
         </form>

@@ -69,9 +69,6 @@ function HeadersPage() {
               >
                 Close
               </button>
-              <button type="button" className="btn btn-primary">
-                Logout
-              </button>
             </div>
           </div>
         </div>
