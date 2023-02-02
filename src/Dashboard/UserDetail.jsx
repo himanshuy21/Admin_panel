@@ -9,12 +9,13 @@ function UserDetail() {
       <HeadersPage />
       <Dashboard />
       <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
-        <div className="card mb-3">
+        <div className="card mb-3" style={{ width: "35rem" }}>
           <div className="row g-0">
             <div className="col-md-4">
               <img
                 src={porfile}
-                className="img-fluid rounded-start"
+                className="card-img-top"
+                // className="img-fluid rounded-start"
                 alt="..."
               />
             </div>
@@ -33,16 +34,6 @@ function UserDetail() {
                 <p className="card-text d-flex">
                   <h6>Contact Number: </h6>
                   <small className="text-muted">851606XXXX</small>
-                </p>
-                <h5 className="card-title">About User</h5>
-                <p className="card-text">
-                  <small className="text-muted">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Animi adipisci quibusdam doloremque officia perspiciatis eum
-                    cum ipsum dignissimos enim deserunt unde ratione eaque
-                    asperiores, modi quia autem maiores, explicabo
-                    reprehenderit?
-                  </small>
                 </p>
                 <div className="card-text d-flex">
                   <button className="btn btn-primary">
