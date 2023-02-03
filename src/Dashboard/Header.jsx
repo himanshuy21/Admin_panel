@@ -5,74 +5,76 @@ import logo from "./Overview_images/logo-light2.JPG";
 function HeadersPage() {
   return (
     <>
-      <header className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a className="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">
-          <img src={logo} className="logo"></img>
-        </a>
-        <button
-          className="navbar-toggler position-absolute d-md-none collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#sidebarMenu"
-          aria-controls="sidebarMenu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="navbar-nav">
-          <div className="d-flex justify-content-center mt-2">
-            <p className="text-light mt-2 p-2">
-              <Link to="/userdetail" className="text-light">
-                Himanshu Yadav
-              </Link>
-            </p>
-            <img
-              src={porfile}
-              alt="not working sorry "
-              className="profile"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            />
+      <nav className="navbar navbar-expand-lg navbar-dark sticky-top bg-dark ">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            <img src={logo} className="logo "></img>
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <form className="d-flex ms-auto">
+              <input
+                className="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+            <ul className="navbar-nav  mb-2 mb-lg-0">
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src={porfile}
+                    alt="not working sorry "
+                    className="profile  "
+                  />
+                </a>
+                <ul
+                  className="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      <p className="text-light mt-2 p-2">
+                        <Link to="/userdetail" className="text-dark">
+                          Himanshu Yadav
+                        </Link>
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a className="dropdown-item text-center" href="#">
+                      <Link to="/" className="text-dark">
+                        Log Out
+                      </Link>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-      </header>
-      <div
-        className="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">
-                User Detail
-              </h5>
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div className="modal-body">
-              <p>Username : Himanshu Yadav </p>
-              <p>Mail-id : himanshuyadav2102@gmail.com</p>
-            </div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </nav>
     </>
   );
 }

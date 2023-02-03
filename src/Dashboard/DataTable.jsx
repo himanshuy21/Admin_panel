@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import HeadersPage from "./Header";
 const Changes = (e) => {
@@ -12,14 +13,23 @@ function DataTable() {
       <div className="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
         <h2>Admin's Data</h2>
         {/* <!-- Button trigger modal --> */}
-        <button
-          type="button"
-          className="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop"
-        >
-          Add
-        </button>
+        <div className="col-12">
+          <button
+            type="button"
+            className="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            Add
+          </button>
+        </div>
+        <div className="col-12 mt-4">
+          <button type="button" className="btn btn-primary ">
+            <Link to="/fullform" className="text-white ">
+              FullForm
+            </Link>
+          </button>
+        </div>
 
         {/* <!-- Modal --> */}
         <div

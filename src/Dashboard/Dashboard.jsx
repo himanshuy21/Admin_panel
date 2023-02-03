@@ -6,12 +6,12 @@ function Dashboard() {
     <>
       <nav
         id="sidebarMenu"
-        class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
+        className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
       >
-        <div class="position-sticky pt-3">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+        <div className="position-sticky pt-3">
+          <ul className="nav flex-column">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -22,7 +22,7 @@ function Dashboard() {
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-home"
+                  className="feather feather-home"
                   aria-hidden="true"
                 >
                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -31,8 +31,8 @@ function Dashboard() {
                 <Link to="/overview">Overview</Link>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -43,7 +43,7 @@ function Dashboard() {
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-file"
+                  className="feather feather-file"
                   aria-hidden="true"
                 >
                   <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
@@ -52,8 +52,8 @@ function Dashboard() {
                 <Link to="/datatable">DataTable</Link>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -64,7 +64,7 @@ function Dashboard() {
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-shopping-cart"
+                  className="feather feather-shopping-cart"
                   aria-hidden="true"
                 >
                   <circle cx="9" cy="21" r="1"></circle>
@@ -74,8 +74,8 @@ function Dashboard() {
                 <Link to="/services">Services</Link>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -86,7 +86,7 @@ function Dashboard() {
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-users"
+                  className="feather feather-users"
                   aria-hidden="true"
                 >
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -97,8 +97,8 @@ function Dashboard() {
                 Customers
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -109,7 +109,7 @@ function Dashboard() {
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-bar-chart-2"
+                  className="feather feather-bar-chart-2"
                   aria-hidden="true"
                 >
                   <line x1="18" y1="20" x2="18" y2="10"></line>
@@ -119,8 +119,8 @@ function Dashboard() {
                 Reports
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -131,7 +131,7 @@ function Dashboard() {
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-layers"
+                  className="feather feather-layers"
                   aria-hidden="true"
                 >
                   <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
