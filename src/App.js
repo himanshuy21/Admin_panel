@@ -9,6 +9,8 @@ import UserDetail from "./Dashboard/UserDetail";
 import LoginPage from "./Dashboard/Login";
 import TogglePage from "./Dashboard/Toggle";
 import FullForm from "./Dashboard/FullForm";
+import Description from "./Dashboard/Description";
+import AdminData from "./Dashboard/AdminDataDetail";
 function App() {
   return (
     <div className="container-fluid">
@@ -23,6 +25,8 @@ function App() {
           <Route exact path="/" element={<LoginPage />}></Route>
           <Route exact path="/home" element={<TogglePage />}></Route>
           <Route exact path="/fullform" element={<FullForm />}></Route>
+          <Route exact path="/description" element={<Description />}></Route>
+          <Route exact path="/datadetail" element={<AdminData />}></Route>
         </Routes>
       </div>
     </div>

@@ -12,13 +12,13 @@ function FullForm() {
         <div className=" mt-4 mb-4">
           <form className="row g-3">
             <div className="col-md-6">
-              <label for="inputEmail4" className="form-label">
+              <label forHtml="inputEmail4" className="form-label">
                 Email
               </label>
               <input type="email" className="form-control" id="inputEmail4" />
             </div>
             <div className="col-md-6">
-              <label for="inputPassword4" className="form-label">
+              <label forHtml="inputPassword4" className="form-label">
                 Password
               </label>
               <input
@@ -28,7 +28,7 @@ function FullForm() {
               />
             </div>
             <div className="col-12">
-              <label for="inputAddress" className="form-label">
+              <label forHtml="inputAddress" className="form-label">
                 Address
               </label>
               <input
@@ -39,7 +39,7 @@ function FullForm() {
               />
             </div>
             <div className="col-12">
-              <label for="inputAddress2" className="form-label">
+              <label forHtml="inputAddress2" className="form-label">
                 Address 2
               </label>
               <input
@@ -50,13 +50,13 @@ function FullForm() {
               />
             </div>
             <div className="col-md-6">
-              <label for="inputCity" className="form-label">
+              <label forHtml="inputCity" className="form-label">
                 City
               </label>
               <input type="text" className="form-control" id="inputCity" />
             </div>
             <div className="col-md-4">
-              <label for="inputState" className="form-label">
+              <label forHtml="inputState" className="form-label">
                 State
               </label>
               <select id="inputState" className="form-select">
@@ -65,7 +65,7 @@ function FullForm() {
               </select>
             </div>
             <div className="col-md-2">
-              <label for="inputZip" className="form-label">
+              <label forHtml="inputZip" className="form-label">
                 Zip
               </label>
               <input type="text" className="form-control" id="inputZip" />
@@ -77,7 +77,7 @@ function FullForm() {
                   type="checkbox"
                   id="gridCheck"
                 />
-                <label className="form-check-label" for="gridCheck">
+                <label className="form-check-label" forHtml="gridCheck">
                   Check me out
                 </label>
               </div>

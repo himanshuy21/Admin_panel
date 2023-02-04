@@ -124,7 +124,11 @@ function DataTable() {
                 <td>XYZ</td>
                 <td>syz@emaple.com</td>
                 <td>756XXXXXX</td>
-                <td>Active</td>
+                <td>
+                  <Link to="/datadetail" className="text-black">
+                    Show Detail
+                  </Link>
+                </td>
               </tr>
             </tbody>
           </table>
